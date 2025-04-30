@@ -1,0 +1,50 @@
+@import "@styles/abstracts/mixins";
+
+.pageContainer {
+  overflow-x: hidden;
+}
+
+.headerContainer {
+  position: relative;
+  width: 100svw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow-x: hidden;
+}
+
+.skillsHeader {
+  text-decoration: none;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+}
+
+.skillsContainer {
+  margin: 10px 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 8px;
+  max-width: 1440px;
+
+  @include for-desktop-up {
+    margin: 20px;
+  }
+}
+
+.skill {
+  margin: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 24px;
+  border: 2px solid black;
+  border-radius: 12.5px;
+
+  @include for-desktop-up {
+    font-size: 40px;
+    padding: 17px 113px;
+  }
+}
