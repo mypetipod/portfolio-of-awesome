@@ -1,0 +1,9 @@
+@use "./abstracts/fonts";
+@import "./abstracts/mixins";
+
+h1 {
+  @include for-desktop-up {
+    font-size: 75px;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,80 @@
+@import "@styles/abstracts/mixins";
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.headerContainer {
+  position: relative;
+  width: 100svw;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.projectsHeader {
+  text-decoration: none;
+  font-family: "Belanosima", sans-serif;
+  font-weight: 400;
+}
+
+.projectContainer {
+  position: relative;
+  width: 100%;
+
+  @include for-desktop-up {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+}
+
+.projectsText {
+  width: 20%;
+}
+
+.year {
+  width: fit-content;
+  font-family: Belanosima;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  @include for-desktop-up {
+    font-size: 32px;
+  }
+}
+
+.label {
+  width: fit-content;
+  font-family: Belanosima;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+  @include for-desktop-up {
+    font-size: 48px;
+  }
+}
+
+.line {
+  background-color: black;
+  width: 25%;
+  height: 2px;
+  margin: 0 auto 0 0;
+}
+
+.projectsImg {
+  position: relative;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include for-desktop-up {
+    width: 50%;
+  }
+}
