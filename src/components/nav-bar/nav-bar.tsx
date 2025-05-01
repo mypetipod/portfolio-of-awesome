@@ -6,7 +6,7 @@ export const Nav = ({ link, linkName }: any) => {
   return (
     <div className={styles["navBar"]}>
       <p className={styles["zachInitials"]}>ZS</p>
-      <Button {...{ link, linkName }} />
+      <Button link="#contact-me" linkName="Contact" />
     </div>
   );
 };
