@@ -9,7 +9,7 @@ export const MainHeader = () => {
         <h1 className={styles["job"]}>Web Designer</h1>
       </div>
       <img
-        src="/mypetipod/assets/images/zach-mountain.webp"
+        src="/portfolio-of-awesome/public/assets/images/zach-mountain.webp"
         alt="Mountain Image"
         className={styles["zachMountain"]}
       />
