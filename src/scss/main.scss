@@ -1,5 +1,5 @@
 @use "./abstracts/fonts";
-@use "./abstracts/mixins";
+@import "./abstracts/mixins";
 
 h1 {
   @include for-desktop-up {
