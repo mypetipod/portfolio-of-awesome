@@ -9,7 +9,7 @@ export const MainHeader = () => {
         <h1 className={styles["job"]}>Web Designer</h1>
       </div>
       <img
-        src="/portfolio-of-awesome/public/assets/images/zach-mountain.webp"
+        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/images/zach-mountain.webp`}
         alt="Mountain Image"
         className={styles["zachMountain"]}
       />
