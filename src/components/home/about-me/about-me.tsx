@@ -27,7 +27,7 @@ export const AboutMe = () => {
         <div className={styles["imgContainer"]}>
           <img
             className={styles["zachImage"]}
-            src="mypetipod/portfolio-of-awesome/public/assets/images/beautiful-web-designer.webp"
+            src="/assets/images/beautiful-web-designer.webp"
             alt="Photograph of Zach"
           />
         </div>
