@@ -1,5 +1,5 @@
 import styles from "./about-me.module.scss";
-// comment for push test
+import pathPrefix from "@components/prefix-link/PrefixedLink";
 
 export const AboutMe = () => {
   return (
@@ -27,7 +27,7 @@ export const AboutMe = () => {
         <div className={styles["imgContainer"]}>
           <img
             className={styles["zachImage"]}
-            src="/assets/images/beautiful-web-designer.webp"
+            src={`${pathPrefix}/assets/images/beautiful-web-designer.webp`}
             alt="Photograph of Zach"
           />
         </div>

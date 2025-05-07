@@ -1,9 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/portfolio-of-awesome",
-  assetsPrefix: "/portfolio-of-awesome/public/assets",
   output: "export",
-  reactStrictMode: true,
+  basePath: "/portfolio-of-awesome",
+  assetPrefix: "/portfolio-of-awesome",
+};
+
+const pathPrefix = process.env.NODE_ENV === "production" ? "/my-project" : "";
+
+module.exports = {
+  assetPrefix: pathPrefix,
+  env: {
+    pathPrefix,
+  },
 };
 
 module.exports = nextConfig;
